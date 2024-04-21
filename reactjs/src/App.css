@@ -1,0 +1,62 @@
+/* Estilo Base para la Barra de Navegación */
+.navbar {
+  background-color: #282c34; /* Fondo oscuro */
+  overflow: hidden; /* Asegura que todo el contenido esté contenido dentro de la barra */
+  position: fixed; /* Hace que la barra de navegación sea pegajosa */
+  top: 0; /* Fija la barra en la parte superior de la página */
+  width: 100%; /* Abarca todo el ancho */
+  z-index: 1000; /* Asegura que siempre esté en la parte superior */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Sombra sutil para dar profundidad */
+}
+
+/* Ajuste del padding-top para el contenido principal */
+body {
+  padding-top: 60px; /* Ajusta este valor según la altura de tu barra de navegación */
+}
+
+/* Estilo para los Enlaces de la Barra de Navegación */
+.navbar a {
+  float: left; /* Alinea los elementos a la izquierda */
+  display: block; /* Hace que cada enlace sea un bloque */
+  color: white; /* Color de texto */
+  text-align: center; /* Alinea el texto al centro */
+  padding: 14px 16px; /* Espaciado interno */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  font-size: 17px; /* Tamaño de fuente */
+  transition: background-color 0.3s; /* Transición suave para el cambio de color */
+}
+
+/* Cambio de color al pasar el ratón */
+.navbar a:hover {
+  background-color: #ddd; /* Color de fondo al pasar el ratón */
+  color: black; /* Color de texto al pasar el ratón */
+}
+
+/* Estilo para el Logo o Marca en la Barra de Navegación */
+.navbar-brand {
+  float: left; /* Alinea el logo a la izquierda */
+  padding: 8px 15px; /* Espaciado interno */
+  color: #fff; /* Color del texto del logo */
+  text-decoration: none; /* Elimina el subrayado */
+  font-size: 20px; /* Tamaño de fuente del logo */
+  font-weight: bold; /* Hace el texto del logo en negrita */
+}
+
+@media screen and (max-width: 600px) {
+  /* Estilo Responsivo para dispositivos más pequeños */
+  .navbar a {
+    float: none; /* Desactiva la alineación a la izquierda */
+    display: block; /* Asegura que los elementos se muestren en bloques separados */
+    text-align: left; /* Alinea el texto a la izquierda */
+  }
+}
+
+.form-control-custom {
+  width: 100%; /* O el ancho que prefieras */
+}
+
+.button-hover:hover {
+  background-color: #003f7f; /* Color más oscuro cuando se pasa el cursor */
+  cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Añade una sombra para resaltar */
+}
