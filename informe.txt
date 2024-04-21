@@ -1,0 +1,7 @@
+Beneficiario: Juan Péres
+ID de solicitud: 123456
+Valor de la cuota en Pesos: 31034646.44
+Valor de la cuota en Uf: 833.88
+Valor de la cuota en UTM: 476.12
+Valor de la cuota en Dolar: 32046.02
+Valor de la cuota en Euro: 30100.92
