@@ -51,7 +51,6 @@ function Prestamo(props) {
 
   }, []);
   
- 
 
 
   const calcularCuota = () => {
@@ -74,7 +73,7 @@ function Prestamo(props) {
     var convUTM = ((31034646.44/valorUTM).toFixed(2)).toString();
     var convDOLAR = ((31034646.44/valorDOLAR).toFixed(2)).toString();
     var convEURO = ((31034646.44/valorEURO).toFixed(2)).toString();
-    var array = "Beneficiario: Juan Péres\nValor de la cuota en Pesos: 31034646.44"+
+    var array = "Beneficiario: Juan Péres\nID de solicitud: 123456\nValor de la cuota en Pesos: 31034646.44"+
     "\nValor de la cuota en Uf: "+ convUF+
     "\nValor de la cuota en UTM: "+ convUTM+
     "\nValor de la cuota en Dolar: "+ convDOLAR+
@@ -131,7 +130,7 @@ function Prestamo(props) {
           <Button style={buttonStyle} onClick={calcularCuota} disabled={botonPresionado}>
             {botonPresionado ? "Cuota Calculada" : "Calcular Cuota"}
           </Button>
-            
+
           <Button
             onClick={createFile}
           >
